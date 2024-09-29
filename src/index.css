@@ -30,7 +30,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 1200px;
   min-height: 100vh;
 }
 
@@ -133,5 +133,11 @@ button:focus-visible {
   }
   body {
     @apply bg-background text-foreground;
+  }
+  #root {
+    @apply min-w-full h-dvh p-0 m-0 bg-slate-200;
+  }
+  .frame {
+      @apply border-dashed border-slate-400/90
   }
 }
