@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sun, Moon } from "lucide-react";
 import appIcon from "@/assets/icon.png";
+import appIconDark from "@/assets/icon-dark.png";
 
 const Header = () => {
   const [currTheme, setCurrTheme] = useState<"dark" | "light">(
@@ -21,11 +22,16 @@ const Header = () => {
 
   return (
     <header className="frame border-b h-16 px-root-x bg-background shadow-md">
-      <div className="frame flex items-center justify-between h-full border-x px-8">
+      <div className="frame flex items-center justify-between h-full border-x px-12">
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-3">
-            <img src={appIcon} className="w-10" />
-            <h2 className="text-xl font-bold drop-shadow-xl">MAI Translator</h2>
+            <img
+              src={currTheme === "light" ? appIcon : appIconDark}
+              className="w-10"
+            />
+            <h2 className="text-xl font-bold drop-shadow-xl tracking-wide">
+              MAI Translator
+            </h2>
           </div>
           <div>Get Started</div>
           <div>Releases</div>
