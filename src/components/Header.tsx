@@ -10,7 +10,7 @@ type HeaderProps = {
 
 const Header = ({ theme, switchTheme }: HeaderProps) => {
   return (
-    <header className="frame fixed top-0 left-0 w-full border-b px-root-x bg-background shadow-md">
+    <header className="frame fixed top-0 left-0 w-full border-b px-root-x bg-background shadow-md z-20">
       <div className="frame flex items-center justify-between border-x h-14 px-12">
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-3">

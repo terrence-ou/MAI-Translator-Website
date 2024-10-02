@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import { Outlet } from "react-router-dom";
+import Footer from "@/components/Footer";
 
 type ThemeType = "light" | "dark";
 export type ContextType = { theme: ThemeType };
@@ -29,6 +30,7 @@ const Root = () => {
           <Outlet context={{ theme: currTheme } satisfies ContextType} />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
