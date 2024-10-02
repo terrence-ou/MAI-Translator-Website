@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sun, Moon } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import appIcon from "@/assets/icon.png";
 import appIconDark from "@/assets/icon-dark.png";
 
@@ -37,7 +39,13 @@ const Header = ({ theme, switchTheme }: HeaderProps) => {
               <Moon className="w-5" strokeWidth={"1.5px"} />
             )}
           </Button>
-          <Button>Download</Button>
+          <a
+            href="https://github.com/terrence-ou/MAI-Translator/releases/download/v0.5.2/MAI.Translator-darwin-arm64-0.5.2.zip"
+            download
+            className={cn(buttonVariants(), "hover:cursor-pointer h-8")}
+          >
+            Download
+          </a>
         </div>
       </div>
     </header>

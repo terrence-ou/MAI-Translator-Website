@@ -6,7 +6,7 @@ type StoreFrontProps = {
 
 const StoreFront = ({ imgSrc }: StoreFrontProps) => {
   return (
-    <div className="relative w-[960px] text-center mx-auto -translate-y-[6rem] bg-background/60 rounded-lg dark:ring-slate-700">
+    <div className="relative w-[1040px] text-center mx-auto -translate-y-[6rem] bg-background/60 rounded-lg dark:ring-slate-700">
       <div className="absolute border frame top-0 left-0 w-full h-full rounded-lg z-20"></div>
       <div className="frame border-b w-full min-h-[6rem] grid grid-cols-3">
         <div className="px-4 py-3 text-left">
