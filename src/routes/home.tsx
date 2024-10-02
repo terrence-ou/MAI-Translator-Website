@@ -7,6 +7,8 @@ import { buttonVariants } from "@/components/ui/button";
 import { ContextType } from "./root";
 import StoreFront from "@/components/StoreFront";
 import { cn } from "@/lib/utils";
+import Corners from "@/components/Corners";
+import Demos from "@/components/Demos";
 
 const Home = () => {
   const { theme } = useOutletContext<ContextType>();
@@ -15,10 +17,10 @@ const Home = () => {
       <h1 className="font-serif tracking-tight pt-36">
         The All-in-One AI Translator
       </h1>
-      <p className="max-w-[620px] mx-auto my-8 opacity-50">
-        MAI Translator is a open source multi-ai supported translator app helps
-        users to fetch translation results from popular AI services and to
-        manage translation result locally.
+      <p className="max-w-[700px] mx-auto my-8 opacity-50">
+        MAI Translator is an open-source, multi-ai-supported translator app that
+        helps users fetch translation results from popular AI services and
+        manage translation results locally.
       </p>
       <div className="flex justify-center gap-2">
         <a
@@ -37,7 +39,7 @@ const Home = () => {
           target="_blank"
           className={cn(
             buttonVariants({ variant: "outline" }),
-            "w-40 px-0 font-normal hover:cursor-pointer",
+            "w-40 px-0 font-normal hover:cursor-pointer transition-none",
           )}
         >
           <CodeXml width={16} strokeWidth={1.5} className="mr-2" />
@@ -45,10 +47,20 @@ const Home = () => {
         </a>
       </div>
       <p className="text-sm opacity-50 mt-3">
-        *Download only available for Apple Silicon now.
+        *Download is only available for Apple Silicon for now.
       </p>
-      <div className="frame border-b mt-44"></div>
-      <StoreFront imgSrc={theme === "dark" ? appDark : appLight} />
+      <div className="relative frame border-b mt-44">
+        <Corners />
+      </div>
+      <div className="flex flex-col items-center">
+        <StoreFront imgSrc={theme === "dark" ? appDark : appLight} />
+        <div className="frame relative border-b w-full -translate-y-6">
+          <Corners />
+        </div>
+      </div>
+      <div className="pb-6 flex flex-col items-center">
+        <Demos />
+      </div>
     </div>
   );
 };

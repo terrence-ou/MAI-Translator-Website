@@ -4,6 +4,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import appIcon from "@/assets/icon.png";
 import appIconDark from "@/assets/icon-dark.png";
+import Corners from "./Corners";
 
 type HeaderProps = {
   theme: "light" | "dark";
@@ -12,8 +13,9 @@ type HeaderProps = {
 
 const Header = ({ theme, switchTheme }: HeaderProps) => {
   return (
-    <header className="frame fixed top-0 left-0 w-full border-b px-root-x bg-background shadow-md z-20">
-      <div className="frame flex items-center justify-between border-x h-14 px-12">
+    <header className="frame fixed top-0 left-0 w-full border-b px-root-x-sm 2xl:px-root-x bg-background shadow-md z-20 transition-all duration-300">
+      <div className="frame relative flex items-center justify-between border-x h-14 px-12">
+        <Corners />
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-3">
             <img

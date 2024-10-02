@@ -52,7 +52,8 @@ export default {
         },
       },
       padding: {
-        "root-x": "10rem",
+        "root-x": "12rem",
+        "root-x-sm": "4rem",
       },
     },
   },

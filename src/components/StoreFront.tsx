@@ -6,7 +6,7 @@ type StoreFrontProps = {
 
 const StoreFront = ({ imgSrc }: StoreFrontProps) => {
   return (
-    <div className="relative w-[1040px] text-center mx-auto -translate-y-[6rem] bg-background/60 rounded-lg dark:ring-slate-700">
+    <div className="relative w-[1040px] text-center -translate-y-[6rem] bg-background/60 rounded-lg dark:ring-slate-700">
       <div className="absolute border frame top-0 left-0 w-full h-full rounded-lg z-20"></div>
       <div className="frame border-b w-full min-h-[6rem] grid grid-cols-3">
         <div className="px-4 py-3 text-left">
@@ -15,8 +15,8 @@ const StoreFront = ({ imgSrc }: StoreFrontProps) => {
             <h3 className="text-sm">Multi-ai supported</h3>
           </div>
           <p className="text-xs tracking-tight opacity-70">
-            User can get translations from multiple popular AI services
-            including DeepL, OpenAI, and Claude
+            Users can get translations from multiple popular AI services
+            including DeepL, OpenAI, and Claude.
           </p>
         </div>
         <div className="frame px-4 py-3 border-x text-left">
@@ -25,8 +25,8 @@ const StoreFront = ({ imgSrc }: StoreFrontProps) => {
             <h3 className="text-sm">Local first</h3>
           </div>
           <p className="text-xs tracking-tight opacity-70">
-            Translation histories are stored locally and can easily export to
-            markdown format by simply drag and drop.
+            Translation histories are stored locally and can easily be exported
+            to markdown format by simply drag and drop.
           </p>
         </div>
         <div className="px-4 py-3 text-left">
@@ -35,8 +35,8 @@ const StoreFront = ({ imgSrc }: StoreFrontProps) => {
             <h3 className="text-sm">Text reading</h3>
           </div>
           <p className="text-xs tracking-tight opacity-70">
-            Using OpenAI Text-to-Speech model to convert texts into
-            natural-sounding high quality audio.
+            Using the OpenAI Text-to-Speech model to convert texts into
+            natural-sounding high-quality audio.
           </p>
         </div>
       </div>
