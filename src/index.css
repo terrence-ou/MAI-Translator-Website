@@ -128,9 +128,9 @@ button {
     @apply bg-background text-foreground;
   }
   #root {
-    @apply min-w-full h-dvh p-0 m-0 bg-slate-100 dark:bg-slate-900 transition-colors duration-150;
+    @apply min-w-full p-0 m-0 bg-slate-100 dark:bg-slate-900 transition-colors duration-150;
   }
   .frame {
-      @apply border-dashed border-slate-400/90 dark:border-slate-500
+      @apply border-dashed border-slate-400/50 dark:border-slate-500/40
   }
 }

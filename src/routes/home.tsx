@@ -5,12 +5,13 @@ import appLight from "@/assets/app-light.png";
 import appDark from "@/assets/app-dark.png";
 
 import { ContextType } from "./root";
+import StoreFront from "@/components/StoreFront";
 
 const Home = () => {
   const { theme } = useOutletContext<ContextType>();
   return (
     <div className="w-full text-center">
-      <h1 className="font-serif tracking-tight pt-32">
+      <h1 className="font-serif tracking-tight pt-36">
         The All-in-One AI Translator
       </h1>
       <p className="max-w-[620px] mx-auto my-8 opacity-50">
@@ -31,13 +32,8 @@ const Home = () => {
           Source Code
         </Button>
       </div>
-      <div className="frame border-b mt-40"></div>
-      <img
-        src={theme === "dark" ? appDark : appLight}
-        width={"720px"}
-        height={"610px"}
-        className="rounded-xl shadow-lg mx-auto"
-      />
+      <div className="frame border-b mt-44"></div>
+      <StoreFront imgSrc={theme === "dark" ? appDark : appLight} />
     </div>
   );
 };
