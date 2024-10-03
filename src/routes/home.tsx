@@ -59,7 +59,7 @@ const Home = () => {
           <Corners />
         </div>
       </div>
-      <div className="pb-6 flex flex-col items-center">
+      <div className="pb-6 flex flex-col items-center mb-3">
         <Demos />
       </div>
     </div>

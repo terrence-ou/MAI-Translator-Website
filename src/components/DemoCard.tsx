@@ -19,7 +19,7 @@ const DemoCard = ({
     <div
       onClick={onClick}
       className={cn(
-        "hover:bg-accent px-2 py-2 hover:duration-300 rounded-md",
+        "hover:bg-accent hover:cursor-pointer px-2 py-2 hover:duration-300 rounded-md",
         selected && "bg-slate-200 dark:bg-slate-700",
       )}
     >
