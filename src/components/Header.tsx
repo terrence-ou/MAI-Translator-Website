@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button";
-import { Sun, Moon } from "lucide-react";
-import { buttonVariants } from "@/components/ui/button";
+import { currDistribution } from "@/consts";
 import { cn } from "@/lib/utils";
+import Corners from "./Corners";
+import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { Sun, Moon } from "lucide-react";
 import appIcon from "@/assets/icon.png";
 import appIconDark from "@/assets/icon-dark.png";
-import Corners from "./Corners";
 
 type HeaderProps = {
   theme: "light" | "dark";
@@ -42,7 +43,7 @@ const Header = ({ theme, switchTheme }: HeaderProps) => {
             )}
           </Button>
           <a
-            href="https://github.com/terrence-ou/MAI-Translator/releases/download/v0.5.2/MAI.Translator-darwin-arm64-0.5.2.zip"
+            href={currDistribution}
             download
             className={cn(buttonVariants(), "hover:cursor-pointer h-8")}
           >

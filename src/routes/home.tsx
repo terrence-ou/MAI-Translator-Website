@@ -1,3 +1,4 @@
+import { currDistribution } from "@/consts";
 import { useOutletContext } from "react-router-dom";
 import { Download, CodeXml } from "lucide-react";
 import appLight from "@/assets/app-light.png";
@@ -24,7 +25,7 @@ const Home = () => {
       </p>
       <div className="flex justify-center gap-2">
         <a
-          href="https://github.com/terrence-ou/MAI-Translator/releases/download/v0.5.2/MAI.Translator-darwin-arm64-0.5.2.zip"
+          href={currDistribution}
           download
           className={cn(
             buttonVariants(),
