@@ -12,7 +12,7 @@ const Demos = () => {
   const { theme } = useOutletContext<ContextType>();
   const currVideoId = videoIds[currDemo][theme];
   return (
-    <div className="frame border w-full xl:w-[1140px] grid grid-cols-5 gap-10 px-12 py-8 bg-background/60 rounded-lg dark:ring-slate-700">
+    <div className="frame border w-full xl:w-[1140px] grid grid-cols-5 gap-10 px-12 py-10 bg-background/60 rounded-lg dark:ring-slate-700">
       <div className="text-left col-span-2">
         <h3 className="font-serif tracking-tight text-2xl">
           A Professional Translation Assistant
