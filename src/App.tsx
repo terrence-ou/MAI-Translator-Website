@@ -10,6 +10,7 @@ const router = createHashRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "releases", element: <Releases /> },
+      { path: "releases/:version", element: <Releases /> },
     ],
   },
 ]);

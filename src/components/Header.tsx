@@ -1,4 +1,4 @@
-import { currDistribution } from "@/consts";
+import { currDistribution } from "@/releases";
 import { useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import Corners from "./Corners";

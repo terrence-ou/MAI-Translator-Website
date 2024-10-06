@@ -4,7 +4,7 @@ import { CodeXml, Download } from "lucide-react";
 const ReleaseCard = ({ release }: { release: releaseType }) => {
   const { version, date, new_features, bug_fixes, links } = release;
   return (
-    <div className="w-full p-6 bg-background rounded-md">
+    <div className="w-full p-6 bg-background/90 rounded-md">
       <div className="flex justify-between pb-3 border-b-[1px] border-primary/15">
         <p className="font-bold">{version}</p>
         <p className="tracking-wider opacity-50 text-sm">{date}</p>

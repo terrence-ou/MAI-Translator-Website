@@ -1,4 +1,4 @@
-import { currDistribution } from "@/consts";
+import { currDistribution } from "@/releases";
 import { useOutletContext } from "react-router-dom";
 import { Download, CodeXml } from "lucide-react";
 import appLight from "@/assets/app-light.png";
