@@ -32,7 +32,7 @@ const Header = ({ theme, switchTheme }: HeaderProps) => {
               MAI Translator
             </h2>
           </div>
-          <div>Get Started</div>
+          {/* <div>Get Started</div> */}
           <div
             className="hover:cursor-pointer hover:underline"
             onClick={() => navigate("/releases")}
