@@ -1,6 +1,8 @@
 import Corners from "@/components/Corners";
 import ReleaseCard from "@/components/ReleaseCard";
 
+import releases from "@/releases";
+
 const Releases = () => {
   return (
     <div className="flex flex-col">
@@ -17,7 +19,9 @@ const Releases = () => {
           <p className="">0.5.3</p>
         </div>
         <div className="col-span-2 px-6">
-          <ReleaseCard />
+          {releases.map((release) => (
+            <ReleaseCard key={release.version} release={release} />
+          ))}
         </div>
       </div>
     </div>
