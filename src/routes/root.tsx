@@ -24,7 +24,7 @@ const Root = () => {
   };
 
   return (
-    <div className="flex flex-col w-full h-full">
+    <div className="flex flex-col w-full min-h-dvh">
       <Header theme={currTheme} switchTheme={handleSwitchCurrTheme} />
       <div className="flex-1 px-root-x-sm 2xl:px-root-x transition-all duration-300">
         <div className="frame relative border-x h-full">
