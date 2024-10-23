@@ -1,6 +1,6 @@
-import { currDistribution } from "@/releases";
 import { useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import releases from "@/releases";
 import Corners from "./Corners";
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
@@ -13,10 +13,15 @@ type HeaderProps = {
   switchTheme: () => void;
 };
 
+const currDistribution = Object.keys(releases[0].links).filter((key) =>
+  key.startsWith("MAI."),
+)[0];
+
 const Header = ({ theme, switchTheme }: HeaderProps) => {
   const navigate = useNavigate();
+
   return (
-    <header className="frame fixed top-0 left-0 w-full border-b px-root-x-sm 2xl:px-root-x bg-background shadow-md z-20 transition-all duration-300">
+    <header className="frame fixed top-0 left-0 w-full min-w-[1200px] border-b px-root-x-sm 2xl:px-root-x bg-background shadow-md z-20 transition-all duration-300">
       <div className="frame relative flex items-center justify-between border-x h-14 px-12">
         <Corners />
         <div className="flex items-center gap-8">
@@ -32,7 +37,6 @@ const Header = ({ theme, switchTheme }: HeaderProps) => {
               MAI Translator
             </h2>
           </div>
-          {/* <div>Get Started</div> */}
           <div
             className="hover:cursor-pointer hover:underline"
             onClick={() => navigate("/releases")}
@@ -53,7 +57,7 @@ const Header = ({ theme, switchTheme }: HeaderProps) => {
             )}
           </Button>
           <a
-            href={currDistribution}
+            href={releases[0].links[currDistribution]}
             download
             className={cn(buttonVariants(), "hover:cursor-pointer h-8")}
           >

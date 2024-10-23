@@ -1,6 +1,6 @@
-import { currDistribution } from "@/releases";
 import { useOutletContext } from "react-router-dom";
 import { Download, CodeXml } from "lucide-react";
+import releases from "@/releases";
 import appLight from "@/assets/app-light.png";
 import appDark from "@/assets/app-dark.png";
 import { buttonVariants } from "@/components/ui/button";
@@ -10,6 +10,10 @@ import StoreFront from "@/components/StoreFront";
 import { cn } from "@/lib/utils";
 import Corners from "@/components/Corners";
 import Demos from "@/components/Demos";
+
+const currDistribution = Object.keys(releases[0].links).filter((key) =>
+  key.startsWith("MAI."),
+)[0];
 
 const Home = () => {
   const { theme } = useOutletContext<ContextType>();
@@ -25,7 +29,7 @@ const Home = () => {
       </p>
       <div className="flex justify-center gap-2">
         <a
-          href={currDistribution}
+          href={releases[0].links[currDistribution]}
           download
           className={cn(
             buttonVariants(),

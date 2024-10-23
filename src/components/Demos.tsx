@@ -53,7 +53,7 @@ const Demos = () => {
         <div className="rounded-md relative h-full my-auto">
           <iframe
             src={`https://player.vimeo.com/video/${currVideoId}?autoplay=0&title=0&portrait=0&byline=0&loop=1&muted=1&like=0`}
-            className="absolute top-0 left-0 w-full h-[405px] rounded-lg overflow-hidden"
+            className="absolute top-0 left-0 w-full h-[405px] rounded-lg overflow-hidden !bg-transparent"
           />
         </div>
       </div>

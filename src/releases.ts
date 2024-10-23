@@ -1,6 +1,3 @@
-export const currDistribution =
-  "https://github.com/terrence-ou/MAI-Translator/releases/download/v0.5.4/MAI.Translator-arm64-0.5.4.zip";
-
 export type releaseType = {
   version: string;
   date: string;
@@ -12,6 +9,21 @@ export type releaseType = {
 };
 
 export default [
+  {
+    version: "0.6.0",
+    date: "10/22/2024",
+    new_features: [
+      "Added a right-click menu for the side bar history card, with 'save as' and 'delete' actions available.",
+      "Added 'clear' button to the result text area",
+    ],
+    bug_fixes: ["Corrected the text opacity issue."],
+    links: {
+      "MAI.Translator-arm64-0.6.0.zip":
+        "https://github.com/terrence-ou/MAI-Translator/releases/download/v0.6.0/MAI.Translator-arm64-0.6.0.zip",
+      "Source Code (zip)":
+        "https://github.com/terrence-ou/MAI-Translator/archive/refs/tags/v0.6.0.zip",
+    },
+  },
   {
     version: "0.5.4",
     date: "10/06/2024",
