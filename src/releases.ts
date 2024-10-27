@@ -10,6 +10,17 @@ export type releaseType = {
 
 export default [
   {
+    version: "0.6.1",
+    date: "10/26/2024",
+    new_features: ["Latest Claude Sonnet 3.5 model enabled."],
+    links: {
+      "MAI.Translator-arm64-0.6.1.zip":
+        "https://github.com/terrence-ou/MAI-Translator/releases/download/v0.6.1/MAI.Translator-arm64-0.6.1.zip",
+      "Source Code (zip)":
+        "https://github.com/terrence-ou/MAI-Translator/archive/refs/tags/v0.6.1.zip",
+    },
+  },
+  {
     version: "0.6.0",
     date: "10/22/2024",
     new_features: [
