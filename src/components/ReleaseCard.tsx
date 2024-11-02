@@ -36,7 +36,7 @@ const ReleaseCard = ({ release }: { release: releaseType }) => {
             <ul>
               {new_features.map((feature, index) => (
                 <li
-                  className="p-1 leading-tight"
+                  className="px-1 py-0 text-sm"
                   key={`${version}-feature-${index}`}
                 >
                   {feature}
@@ -51,7 +51,7 @@ const ReleaseCard = ({ release }: { release: releaseType }) => {
             <ul>
               {bug_fixes.map((fix, index) => (
                 <li
-                  className="p-1 leading-tight"
+                  className="px-1 py-0 text-sm"
                   key={`${version}-bugfix-${index}`}
                 >
                   {fix}

@@ -9,22 +9,29 @@ const Footer = () => {
         <div className="flex">
           <p className="mx-3">Find me on:</p>
           <a
-            href="https://github.com/terrence-ou/MAI-Translator"
+            href="https://github.com/terrence-ou/"
             target="_blank"
-            className="hover:underline hover:cursor-pointer"
+            className="px-3 hover:underline hover:cursor-pointer"
           >
             Github
           </a>
           <a
             href="https://www.linkedin.com/in/tingsong-ou-231931196/"
             target="_blank"
-            className="px-3 mx-3 border-x hover:underline hover:cursor-pointer"
+            className="px-3 border-l hover:underline hover:cursor-pointer"
           >
             LinkedIn
           </a>
           <a
+            href="https://x.com/ou_terrence"
+            target="_blank"
+            className="px-3 border-l hover:underline hover:cursor-pointer"
+          >
+            X (Twitter)
+          </a>
+          <a
             href="mailto:terrence@clickvisionstudio.com"
-            className="hover:underline hover:cursor-pointer"
+            className="px-3 border-l hover:underline hover:cursor-pointer"
           >
             Contact me
           </a>
