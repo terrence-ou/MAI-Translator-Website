@@ -10,6 +10,21 @@ export type releaseType = {
 
 export default [
   {
+    version: "0.7.0",
+    date: "11/01/2024",
+    bug_fixes: [
+      "The hidden .md files will be deleted along with the corresponding .txt files.",
+      "Corrected unexpected UI interaction issue when attempting to delete the translation record.",
+      "Added test cases, now the code coverage is over 80%.",
+    ],
+    links: {
+      "MAI.Translator-arm64-0.7.0.zip":
+        "https://github.com/terrence-ou/MAI-Translator/releases/download/v0.7.0/MAI.Translator-arm64-0.7.0.zip",
+      "Source Code (zip)":
+        "https://github.com/terrence-ou/MAI-Translator/archive/refs/tags/v0.7.0.zip",
+    },
+  },
+  {
     version: "0.6.1",
     date: "10/26/2024",
     new_features: ["Latest Claude Sonnet 3.5 model enabled."],
@@ -25,7 +40,7 @@ export default [
     date: "10/22/2024",
     new_features: [
       "Added a right-click menu for the side bar history card, with 'save as' and 'delete' actions available.",
-      "Added 'clear' button to the result text area",
+      "Added 'clear' button to the result text area.",
     ],
     bug_fixes: ["Corrected the text opacity issue."],
     links: {
