@@ -2,6 +2,7 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root";
 import Home from "./routes/home";
 import Releases from "./routes/releases";
+import GetStarted from "./routes/get_started";
 
 const router = createHashRouter([
   {
@@ -11,6 +12,7 @@ const router = createHashRouter([
       { index: true, element: <Home /> },
       { path: "releases", element: <Releases /> },
       { path: "releases/:version", element: <Releases /> },
+      { path: "get-started", element: <GetStarted /> },
     ],
   },
 ]);

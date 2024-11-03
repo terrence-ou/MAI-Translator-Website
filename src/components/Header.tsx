@@ -39,6 +39,12 @@ const Header = ({ theme, switchTheme }: HeaderProps) => {
           </div>
           <div
             className="hover:cursor-pointer hover:underline"
+            onClick={() => navigate("/get-started")}
+          >
+            Get Started
+          </div>
+          <div
+            className="hover:cursor-pointer hover:underline"
             onClick={() => navigate("/releases")}
           >
             Releases
