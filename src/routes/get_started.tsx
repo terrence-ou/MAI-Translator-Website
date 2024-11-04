@@ -1,4 +1,3 @@
-import BuildForPlatform from "@/components/BuildForPlatform";
 import Corners from "@/components/Corners";
 import HowToUse from "@/components/HowToUse";
 import RunSourceCode from "@/components/RunSourceCode";
@@ -38,13 +37,6 @@ const GetStarted = () => {
                 >
                   Run source code
                 </HashLink>
-                <HashLink
-                  className="hover:cursor-pointer hover:underline"
-                  smooth
-                  to={"/get-started#build-for-platforms"}
-                >
-                  Build for platforms
-                </HashLink>
               </div>
             </div>
           </div>
@@ -53,8 +45,6 @@ const GetStarted = () => {
           <HowToUse />
           <div className="w-full border-b border-primary/20 my-2"></div>
           <RunSourceCode />
-          <div className="w-full border-b border-primary/20 my-2"></div>
-          <BuildForPlatform />
           <Corners top={true} right={false} />
         </div>
       </div>
