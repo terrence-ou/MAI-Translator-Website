@@ -21,6 +21,10 @@ a {
   text-decoration: inherit;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -129,5 +133,21 @@ button {
 
   li {
     @apply pl-4 py-2 list-disc list-inside opacity-60;
+  }
+
+  .doc-header {
+      @apply text-lg font-semibold mb-2;
+  }
+
+  .doc-body {
+      @apply font-light dark:opacity-70;
+  }
+
+  .doc-ul {
+      @apply my-2 pl-2;
+  }
+
+  .doc-li {
+      @apply p-0 m-0 text-primary opacity-100 font-light dark:opacity-70;
   }
 }
