@@ -2,12 +2,9 @@ import { Settings } from "lucide-react";
 
 const HowToUse = () => {
   return (
-    <div>
-      <p
-        className="font-medium font-serif text-xl mb-6 hover:cursor-pointer"
-        // onClick={() => navigate("/releases")}
-      >
-        Download & Run APP
+    <div id="download-setup">
+      <p className="font-medium font-serif text-xl mb-6 hover:cursor-pointer">
+        Download & Set Up APP
       </p>
       <div className="flex flex-col gap-6">
         <section>

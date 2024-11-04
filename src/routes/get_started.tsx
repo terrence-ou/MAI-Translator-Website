@@ -1,6 +1,8 @@
+import BuildForPlatform from "@/components/BuildForPlatform";
 import Corners from "@/components/Corners";
 import HowToUse from "@/components/HowToUse";
-import { Diamond } from "lucide-react";
+import RunSourceCode from "@/components/RunSourceCode";
+import { HashLink } from "react-router-hash-link";
 
 const GetStarted = () => {
   return (
@@ -14,30 +16,45 @@ const GetStarted = () => {
         </p>
         <Corners />
       </div>
-      <div className="frame flex-1 grid grid-cols-4 px-12 2xl:px-28 transition-none">
+      <div className="frame flex-1 grid grid-cols-5 px-12 2xl:px-20 transition-none">
         <div className="col-span-1 py-10">
-          <p
-            className="font-medium font-serif text-xl mb-6 hover:cursor-pointer"
-            // onClick={() => navigate("/releases")}
-          >
-            Guides
-          </p>
           <div className="sticky top-20">
-            <div className="flex flex-col gap-1">
-              <a className="hover:cursor-pointer hover:underline">
-                Download & Set Up App
-              </a>
-              <a className="hover:cursor-pointer hover:underline">
-                Run source code
-              </a>
-              <a className="hover:cursor-pointer hover:underline">
-                Build for platforms
-              </a>
+            <p className="font-medium font-serif text-xl mb-6 hover:cursor-pointer">
+              Guides
+            </p>
+            <div className="sticky top-20">
+              <div className="flex flex-col gap-1">
+                <HashLink
+                  className="hover:cursor-pointer hover:underline"
+                  smooth
+                  to={"/get-started#download-setup"}
+                >
+                  Download & Set Up App
+                </HashLink>
+                <HashLink
+                  className="hover:cursor-pointer hover:underline"
+                  smooth
+                  to={"/get-started#run-source-code"}
+                >
+                  Run source code
+                </HashLink>
+                <HashLink
+                  className="hover:cursor-pointer hover:underline"
+                  smooth
+                  to={"/get-started#build-for-platforms"}
+                >
+                  Build for platforms
+                </HashLink>
+              </div>
             </div>
           </div>
         </div>
-        <div className="frame border-l relative col-span-3 px-10 2xl:px-14 py-10 flex flex-col gap-8">
+        <div className="frame border-l relative col-span-4 pl-10 pr-12 2xl:pl-14 2xl:pr-32 py-10 flex flex-col gap-8">
           <HowToUse />
+          <div className="w-full border-b border-primary/20 my-2"></div>
+          <RunSourceCode />
+          <div className="w-full border-b border-primary/20 my-2"></div>
+          <BuildForPlatform />
           <Corners top={true} right={false} />
         </div>
       </div>

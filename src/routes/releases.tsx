@@ -20,7 +20,7 @@ const Releases = () => {
         <p className="opacity-50">Keep up with the latest releases</p>
         <Corners />
       </div>
-      <div className="frame flex-1 grid grid-cols-5 px-12 2xl:px-28 transition-none">
+      <div className="frame flex-1 grid grid-cols-5 px-12 2xl:px-20 transition-none">
         <div className="col-span-1 py-10">
           <div className="sticky top-20">
             <p
@@ -42,7 +42,7 @@ const Releases = () => {
             </div>
           </div>
         </div>
-        <div className="frame border-x relative col-span-3 px-10 2xl:px-14 py-10 flex flex-col gap-8">
+        <div className="frame border-x relative col-span-3 px-10 2xl:px-16 py-10 flex flex-col gap-8">
           {releaseList.map((release, index) => (
             <div key={`${release.version}`}>
               {!version && index === 0 && (
