@@ -10,6 +10,19 @@ export type releaseType = {
 
 export default [
   {
+    version: "0.7.1",
+    date: "11/06/2024",
+    new_features: [
+      "Updated ai-fetcher package to support Claude's new sonnet model.",
+    ],
+    links: {
+      "MAI.Translator-arm64-0.7.1.zip":
+        "https://github.com/terrence-ou/MAI-Translator/releases/download/v0.7.1/MAI.Translator-arm64-0.7.1.zip",
+      "Source Code (zip)":
+        "https://github.com/terrence-ou/MAI-Translator/archive/refs/tags/v0.7.1.zip",
+    },
+  },
+  {
     version: "0.7.0",
     date: "11/01/2024",
     bug_fixes: [
