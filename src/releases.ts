@@ -10,6 +10,20 @@ export type releaseType = {
 
 export default [
   {
+    version: "0.8.0",
+    date: "12/25/2024",
+    new_features: [
+      "Auto updater added.",
+      "Mac Intel chip supported now.",
+    ],
+    links: {
+      "MAI.Translator-arm64-0.8.0.zip":
+        "https://github.com/terrence-ou/MAI-Translator/releases/download/v0.8.0/MAI.Translator-darwin-arm64-0.8.0.zip",
+      "Source Code (zip)":
+        "https://github.com/terrence-ou/MAI-Translator/archive/refs/tags/v0.8.0.zip",
+    },
+  },
+  {
     version: "0.7.1",
     date: "11/06/2024",
     new_features: [
